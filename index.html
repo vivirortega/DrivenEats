@@ -25,22 +25,22 @@
         <section class="all__foodcards">
             <h2 class="foodcard__title">Primeiro, seu prato</h2>
             <div class="cards__foods">
-                <article class="card__food">
+                <article class="card__food lasagna" onclick="chooseLasagna()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935582082116251718/lasanha-tradicional-da-ana-maria-1.png" class="img__food">
                     <h2 class="food__name">Lasanha tradicional</h2>
                     <p class="descrip__food">Lasanha tradicional com carne moída</p>
                     <p class="price__card">R$ 17,00</p>
+
                 </article>
 
-
-                <article class="card__food">
+                <article class="card__food gnocchi" onclick="chooseGnocchi()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935593252910952579/como-fazer-nhoque-1-840x480.png" class="img__food">
                     <h2 class="food__name">Nhoque</h2>
                     <p class="descrip__food">Queijo ralado opcional</p>
                     <p class="price__card">R$ 20,00</p>
                 </article>
 
-                <article class="card__food">
+                <article class="card__food pasta" onclick="choosePasta()">
                     <img src="https://media.discordapp.net/attachments/908466469669588992/936271478154985542/353778_original.png" class="img__food">
                     <h2 class="food__name">Macarrão molho branco</h2>
                     <p class="descrip__food">Salsa opcional</p>
@@ -53,19 +53,21 @@
         <section class="all__foodcards">
             <h2 class="foodcard__title">Agora, sua bebida</h2>
             <div class="cards__foods">
-                <article class="card__food">
+                <article class="card__food juice" onclick="chooseJuice()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935585264083034123/Receita.png" class="img__food">
                     <h2 class="food__name">Suco de melancia</h2>
                     <p class="descrip__food">Suco de melancia natural</p>
                     <p class="price__card">R$ 8,00</p>
                 </article>
-                <article class="card__food">
+
+                <article class="card__food cola" onclick="chooseCola()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935594953546022972/maxresdefault-1.png" class="img__food">
                     <h2 class="food__name">Coca-cola</h2>
                     <p class="descrip__food">Coca gelada, limão opcional</p>
                     <p class="price__card">R$ 10,00</p>
                 </article>
-                <article class="card__food">
+
+                <article class="card__food fanta" onclick="chooseFanta()">
                     <img src="https://media.discordapp.net/attachments/908466469669588992/936270677013577728/fanta-uva.png?width=591&height=473" class="img__food">
                     <h2 class="food__name">Fanta Uva</h2>
                     <p class="descrip__food">Fanta gelada, limão opcional</p>
@@ -74,23 +76,24 @@
             </div>
         </section>
 
-
         <section class="all__foodcards">
             <h2 class="foodcard__title">Por fim, sua sobremesa</h2>
             <div class="cards__foods">
-                <article class="card__food">
+                <article class="card__food pie" onclick="choosePie()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935585993724153886/main-header.png" class="img__food">
                     <h2 class="food__name">Torta holandesa</h2>
                     <p class="descrip__food">Torta de biscoito com recheio de chocolate</p>
                     <p class="price__card">R$ 10,00</p>
                 </article>
-                <article class="card__food">
+
+                <article class="card__food eclair" onclick="chooseEclair()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935595376789053521/sobremesas-francesas-3.png" class="img__food">
                     <h2 class="food__name">Bomba de chocolate</h2>
                     <p class="descrip__food">Recheio Chocolate ou Doce de Leite</p>
                     <p class="price__card">R$ 15,00</p>
                 </article>
-                <article class="card__food">
+
+                <article class="card__food brownie" onclick="chooseBrownie()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/936271058925916160/receitas-de-brownie-com-sorvete.png" class="img__food">
                     <h2 class="food__name">Brownie com Sorvete</h2>
                     <p class="descrip__food">Sorvetes sabor: Baunilha ou Ninho</p>
@@ -106,6 +109,7 @@
 
         </div>
     </main>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
