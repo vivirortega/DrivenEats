@@ -103,3 +103,16 @@ main {
     display: flex;
     overflow-x: scroll;
 }
+
+.conclude__button {
+    background-color: #32B72F;
+    font-family: Roboto;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 364px;
+    height: 61px;
+}
+
+.hidden__item {
+    display: none;
+}
