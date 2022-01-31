@@ -6,6 +6,9 @@ let priceDrink;
 let priceDessert;
 let total = priceFood + priceDrink + priceDessert;
 
+
+
+
 // pratos
 
 function chooseLasagna() {
@@ -14,6 +17,7 @@ function chooseLasagna() {
     document.querySelector(".gnocchi").style.border = "4px solid white";
     food = "Lasanha";
     priceFood = 17;
+    changeButton();
 }
 
 function chooseGnocchi() {
@@ -22,6 +26,7 @@ function chooseGnocchi() {
     document.querySelector(".lasagna").style.border = "4px solid white";
     food = "Nhoque";
     priceFood = 20;
+    changeButton();
 }
 
 function choosePasta() {
@@ -30,6 +35,7 @@ function choosePasta() {
     document.querySelector(".lasagna").style.border = "4px solid white";
     food = "Macarrão ao Molho Branco";
     priceFood = 16;
+    changeButton();
 }
 
 //bebidas
@@ -40,6 +46,7 @@ function chooseJuice() {
     document.querySelector(".fanta").style.border = "4px solid white";
     drink = "Suco de melancia";
     priceDrink = 8;
+    changeButton();
 }
 
 function chooseCola() {
@@ -48,6 +55,7 @@ function chooseCola() {
     document.querySelector(".juice").style.border = "4px solid white";
     drink = "Coca-Cola";
     priceDrink = 10;
+    changeButton();
 }
 
 function chooseFanta() {
@@ -56,6 +64,7 @@ function chooseFanta() {
     document.querySelector(".juice").style.border = "4px solid white";
     drink = "Fanta Uva";
     priceDrink = 9;
+    changeButton();
 }
 
 //sobremesa
@@ -66,6 +75,7 @@ function choosePie() {
     document.querySelector(".brownie").style.border = "4px solid white";
     dessert = "Torta Holandesa";
     priceDessert = 10;
+    changeButton();
 }
 
 function chooseEclair() {
@@ -74,6 +84,7 @@ function chooseEclair() {
     document.querySelector(".pie").style.border = "4px solid white";
     dessert = "Bomba de Chocolate";
     priceDessert = 15;
+    changeButton();
 }
 
 function chooseBrownie() {
@@ -82,18 +93,18 @@ function chooseBrownie() {
     document.querySelector(".eclair").style.border = "4px solid white";
     dessert = "Brownie com sorvete";
     priceDessert = 17;
+    changeButton();
 }
 
-
+//troca o botão quando os 3 pedidos são feitos
 function changeButton() {
     if (food != 0 && drink != 0 && dessert != 0) {
         const button = document.querySelector('.select__button');
-        button.classList.add('conclude__button');
-        button.classList.remove('select__button');
+        button.classlist.add('conclude__button');
+        button.classlist.remove('select__button');
         button.innerHTML = 'Fechar pedido';
     }
 }
-
 
 //finaliza pedido, confirma dados e envia pelo whatsapp
 

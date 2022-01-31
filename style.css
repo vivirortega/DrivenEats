@@ -113,8 +113,14 @@ main {
     height: 61px;
     margin-top: 15px;
     margin-left: 25px;
+    color: #FFFFFF;
+    border: none;
 }
 
 .hidden__item {
     display: none;
+}
+
+.selected__item {
+    border: green 4px solid;
 }
