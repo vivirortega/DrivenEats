@@ -118,7 +118,7 @@ function changeButton() {
 //finaliza pedido, confirma dados e envia pelo whatsapp
 
 function finalOrder() {
-
+    let total = priceFood + priceDrink + priceDessert;
     let name = prompt('Qual seu nome?');
     let adress = prompt('Qual seu endereço?');
 
