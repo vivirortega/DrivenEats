@@ -7,8 +7,6 @@ let priceDessert;
 let total = priceFood + priceDrink + priceDessert;
 
 
-
-
 // pratos
 
 function chooseLasagna() {
@@ -17,6 +15,7 @@ function chooseLasagna() {
     document.querySelector(".gnocchi").style.border = "4px solid white";
     food = "Lasanha";
     priceFood = 17;
+
     changeButton();
 }
 
@@ -26,6 +25,7 @@ function chooseGnocchi() {
     document.querySelector(".lasagna").style.border = "4px solid white";
     food = "Nhoque";
     priceFood = 20;
+
     changeButton();
 }
 
@@ -35,6 +35,7 @@ function choosePasta() {
     document.querySelector(".lasagna").style.border = "4px solid white";
     food = "Macarrão ao Molho Branco";
     priceFood = 16;
+
     changeButton();
 }
 
@@ -46,6 +47,7 @@ function chooseJuice() {
     document.querySelector(".fanta").style.border = "4px solid white";
     drink = "Suco de melancia";
     priceDrink = 8;
+
     changeButton();
 }
 
@@ -55,6 +57,7 @@ function chooseCola() {
     document.querySelector(".juice").style.border = "4px solid white";
     drink = "Coca-Cola";
     priceDrink = 10;
+
     changeButton();
 }
 
@@ -64,6 +67,7 @@ function chooseFanta() {
     document.querySelector(".juice").style.border = "4px solid white";
     drink = "Fanta Uva";
     priceDrink = 9;
+
     changeButton();
 }
 
@@ -75,6 +79,7 @@ function choosePie() {
     document.querySelector(".brownie").style.border = "4px solid white";
     dessert = "Torta Holandesa";
     priceDessert = 10;
+
     changeButton();
 }
 
@@ -84,6 +89,7 @@ function chooseEclair() {
     document.querySelector(".pie").style.border = "4px solid white";
     dessert = "Bomba de Chocolate";
     priceDessert = 15;
+
     changeButton();
 }
 
@@ -93,8 +99,11 @@ function chooseBrownie() {
     document.querySelector(".eclair").style.border = "4px solid white";
     dessert = "Brownie com sorvete";
     priceDessert = 17;
+
     changeButton();
 }
+
+
 
 //troca o botão quando os 3 pedidos são feitos
 function changeButton() {

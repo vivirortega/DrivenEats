@@ -43,6 +43,7 @@ body {
     margin: 10px;
     border-radius: 9px;
     padding: 18px 14px;
+    position: relative;
 }
 
 .food__name {
@@ -121,6 +122,8 @@ main {
     display: none;
 }
 
-.selected__item {
-    border: green 4px solid;
+.vector__item {
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
 }
