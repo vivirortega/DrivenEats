@@ -114,7 +114,7 @@ function finalOrder() {
     let adress = prompt('Qual seu endereço?');
 
     let message = `Olá, gostaria de fazer o pedido:\n- Prato: ${food}\n- Bebida: ${drink}\n- Sobremesa: ${dessert}\nTotal: R$ ${total}\n\nNome: ${name}\nEndereço: ${adress}`;
-    window.open(`https://wa.me/5512993935959?text=${encodeURIComponent(message)}`);
+    window.open(`https://wa.me/5519993935959?text=${encodeURIComponent(message)}`);
 
 
 }
