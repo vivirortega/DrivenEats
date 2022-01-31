@@ -1,6 +1,6 @@
-let food;
-let drink;
-let dessert;
+let food = null;
+let drink = null;
+let dessert = null;
 let priceFood;
 let priceDrink;
 let priceDessert;
@@ -98,10 +98,10 @@ function chooseBrownie() {
 
 //troca o botão quando os 3 pedidos são feitos
 function changeButton() {
-    if (food != 0 && drink != 0 && dessert != 0) {
+    if (food && drink && dessert) {
         const button = document.querySelector('.select__button');
-        button.classlist.add('conclude__button');
-        button.classlist.remove('select__button');
+        button.classList.add('conclude__button');
+        button.classList.remove('select__button');
         button.innerHTML = 'Fechar pedido';
     }
 }
