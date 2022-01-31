@@ -111,6 +111,8 @@ main {
     border-radius: 50px;
     width: 364px;
     height: 61px;
+    margin-top: 15px;
+    margin-left: 25px;
 }
 
 .hidden__item {

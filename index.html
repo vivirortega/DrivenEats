@@ -27,24 +27,24 @@
             <div class="cards__foods">
                 <article class="card__food lasagna" onclick="chooseLasagna()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935582082116251718/lasanha-tradicional-da-ana-maria-1.png" class="img__food">
-                    <h2 class="food__name">Lasanha tradicional</h2>
+                    <h2 class="food__name" data-identifier="food-title">Lasanha tradicional</h2>
                     <p class="descrip__food">Lasanha tradicional com carne moída</p>
-                    <p class="price__card">R$ 17,00</p>
+                    <p class="price__card" data-identifier="food-price">R$ 17,00</p>
 
                 </article>
 
                 <article class="card__food gnocchi" onclick="chooseGnocchi()">
                     <img src="https://cdn.discordapp.com/attachments/908466469669588992/935593252910952579/como-fazer-nhoque-1-840x480.png" class="img__food">
-                    <h2 class="food__name">Nhoque</h2>
+                    <h2 class="food__name" data-identifier="food-title">Nhoque</h2>
                     <p class="descrip__food">Queijo ralado opcional</p>
-                    <p class="price__card">R$ 20,00</p>
+                    <p class="price__card" data-identifier="food-price">R$ 20,00</p>
                 </article>
 
                 <article class="card__food pasta" onclick="choosePasta()">
                     <img src="https://media.discordapp.net/attachments/908466469669588992/936271478154985542/353778_original.png" class="img__food">
-                    <h2 class="food__name">Macarrão molho branco</h2>
+                    <h2 class="food__name" data-identifier="food-title">Macarrão molho branco</h2>
                     <p class="descrip__food">Salsa opcional</p>
-                    <p class="price__card">R$ 16,00</p>
+                    <p class="price__card" data-identifier="food-price">R$ 16,00</p>
                 </article>
             </div>
 
@@ -104,7 +104,7 @@
 
         <div class="order__button">
             <button class="select__button" onclick="changeButton()">Selecione os 3 itens para fechar o pedido</button>
-            <button class="conclude__button hidden__item" onclick="finalOrder()">Selecione os 3 itens para fechar o pedido</button>
+
 
 
 

@@ -4,6 +4,7 @@ let dessert;
 let priceFood;
 let priceDrink;
 let priceDessert;
+let total = priceFood + priceDrink + priceDessert;
 
 // pratos
 
@@ -84,10 +85,20 @@ function chooseBrownie() {
 }
 
 
+function changeButton() {
+    if (food != 0 && drink != 0 && dessert != 0) {
+        const button = document.querySelector('.select__button');
+        button.classList.add('conclude__button');
+        button.classList.remove('select__button');
+        button.innerHTML = 'Fechar pedido';
+    }
+}
+
+
 //finaliza pedido, confirma dados e envia pelo whatsapp
 
 function finalOrder() {
-    let total = priceFood + priceDrink + priceDessert;
+
     let name = prompt('Qual seu nome?');
     let adress = prompt('Qual seu endereço?');
 
